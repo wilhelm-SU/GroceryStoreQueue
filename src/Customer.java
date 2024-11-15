@@ -1,19 +1,14 @@
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Queue;
 import java.util.Random;
 public class Customer {
 
     private int maxItems = 50;
     private int items = 0;
     private int totalSecondsWaited = 0;
-    private boolean beingCheckedOut = false;
 
     Random RNG = new Random();
 
     Customer() {
         items = generateRandomItems();
-        beingCheckedOut = false;
     }
 
     public int generateRandomItems() {
@@ -22,10 +17,6 @@ public class Customer {
 
     public int getItemAmount() {
         return items;
-    }
-
-    public void isBeingCheckOut(){
-        beingCheckedOut = true;
     }
 
     public void setTotalMinutesWaited(int inputMinutes) {

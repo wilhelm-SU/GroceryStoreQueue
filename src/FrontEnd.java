@@ -12,7 +12,7 @@ public class FrontEnd {
     private int maxNumExpressItems = 25;
     private int maxNumSuperItems = 10;
 
-    //Queues
+    //Queue
     public static Queue<Customer> customerQueue = new LinkedList<>();
 
     //Array
